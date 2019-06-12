@@ -115,4 +115,8 @@ h1 {
     border-top: 1px solid #343A40;
     border-bottom: 1px solid #343A40;
     }
-
+    .btn-primary{
+      background-color: #343A40;
+      border-color:#343A40;
+      
+    }
