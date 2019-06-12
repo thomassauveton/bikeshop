@@ -116,21 +116,3 @@ h1 {
     border-bottom: 1px solid #343A40;
     }
 
-    .text-divider2 {
-      margin: 2em 0;
-      line-height: 0;
-      text-align: center;
-      }
-    
-    .text-divider2 span{
-      
-      padding: 1em;
-      }
-    
-    .text-divider2:before{
-       content: " ";
-        display: block;
-        border-top: 1px solid #343A40;
-        border-bottom: 1px solid #343A40;
-        }
-    
