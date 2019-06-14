@@ -31,7 +31,7 @@
                   <!--Navbar -->
                   <div class="mynavbar">
           <nav class="mb-1 navbar navbar-expand-lg navbar-black info-color">
-              <a class="navbar-brand" href="#">BIKE SHOP</a>
+              <a class="navbar-brand" href="/">BIKE SHOP</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
                 aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -41,21 +41,19 @@
                 
                 <ul class="navbar-nav" id="navmenu">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home
+                        <a class="nav-link" href="/">Home
                           <span class="sr-only">(current)</span>
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Shop</a>
+                        <a class="nav-link" href="/">Shop</a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
-                      </li>
+                      
                 </ul>
                 <ul class="navbar-nav ml-auto">
                   <li class="nav-item">
                     <a class="nav-link" href="#">
-                      <i class="fa fa-shopping-cart"></i>Cart</a>
+                      <i class="fa fa-shopping-cart"href="shop"></i>Cart</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"
@@ -72,13 +70,13 @@
           </div>
             <!--/.Navbar -->
                 </div>
-            
+                
         <div class="card">
             <div class="row">
                 <aside class="col-sm-5 border-right">
         <article class="gallery-wrap"> 
         <div class="img-big-wrap">
-          <div> <a href="#"><img src="./images/bike-1.jpg"></a></div>
+          <div> <a href="#"><img src=<%=dataBike.url%>></a></div>
         </div> <!-- slider-product.// -->
         <div class="img-small-wrap">
           <!-- <div class="item-gallery"> <img src="bike-1.jpg"> </div>
@@ -86,15 +84,16 @@
           <div class="item-gallery"> <img src="bike-1.jpg"> </div>
           <div class="item-gallery"> <img src="bike-1.jpg"> </div> -->
         </div> <!-- slider-nav.// -->
+        
         </article> <!-- gallery-wrap .end// -->
                 </aside>
                 <aside class="col-sm-7">
         <article class="card-body p-5">
-            <h3 class="title mb-3">Model BIKO45</h3>
+            <h3 class="title mb-3"></h3>
         
         <p class="price-detail-wrap"> 
             <span class="price h3 text-warning"> 
-                <span class="num">679</span><span class="currency">€</span>
+                <span class="num"><%=dataBike.price%></span><span class="currency">€</span>
             </span> 
             
         </p> <!-- price-detail-wrap .// -->
@@ -104,12 +103,12 @@
                </p></dd>
         </dl>
         <dl class="param param-feature">
-          <dt>Ref#</dt>
-          <dd>12345611</dd>
+          <dt>Ref:</dt>
+          <dd><%=dataBike.name%></dd>
         </dl>  <!-- item-property-hor .// -->
         <dl class="param param-feature">
           <dt>Color</dt>
-          <dd>Red</dd>
+          <dd><%=dataBike.color%></dd>
         </dl>  <!-- item-property-hor .// -->
         <dl class="param param-feature">
           <dt>Delivery</dt>
@@ -161,6 +160,7 @@
          <!-- Zone de Divider -->
 
     <div class="container">
+    
             <br>
           <div class="well">
             <h2 class="text-divider"><span>AUTRES MODELES</span></h2>
